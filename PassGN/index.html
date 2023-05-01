@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" type="image/png" href="gn.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senha, password generator">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo" src="txt.png">
+
+    <div class="border">
+        <main class="ContainerInput">
+
+            <span>Size 
+                <span id="valor"></span> 
+            </span>
+
+            <input id="slider" class="slider" type="range" min="5" max="15" value="10">
+
+            <button id="button" class="buttoncta" onclick="generatepass()" >Generate a password</button>
+
+        </main>
+
+        <div id="ContainerPassword" onclick="cb()" class="ContainerPassword hidden">
+
+            <span class="title">Your generated password:</span>
+            <span id="password" class="password"></span>
+            <span class="tooltip">Click to copy to clipboard 📋</span>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

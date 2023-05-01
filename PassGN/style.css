@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Comme&family=PT+Sans+Narrow:wght@700&family=Poppins&display=swap');
+* {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 2px green;
+
+}
+@keyframes main {
+    from{
+        filter: blur(5px);
+    transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+body{
+    background-image: url(Untitled.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+.ContainerInput{
+    max-width: 500px;
+    margin: 15px 0;
+}
+.ContainerInput span{
+    color: white;
+    font-size: 24px;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 7px;
+    background-color: rgb(27, 27, 27);
+    height: 20px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.buttoncta{
+    height: 40px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 1s;
+}
+.ContainerPassword{
+    max-width: 500px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.password{
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+    transition: transform 1s;
+}
+.password:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px green;
+}
+.buttoncta:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px green;
+}
+.tooltip{
+    color: white;
+    position: relative;
+    padding: 6px 8px;
+    text-align: center;
+    transition: transform 1s;
+    visibility: 0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.ContainerPassword:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.hidden{
+    display: none;
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    max-width: 600px;
+    background-color: black;
+    box-shadow: 5px 5px 10px green;
+    animation: main 2s;
+}
+@media (max-width: 750px){
+    .logo{
+        max-width: 400px;
+    }
+    .border{
+        max-width: 70%;
+    }
+    .buttoncta{
+        width: 70%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+    .password{
+        width: 70%;
+    }
+    .slider{
+        width: 70%;
+    }
+}
+@media (max-width: 465px){
+    .logo{
+        max-width: 400px;
+    }
+    .border{
+        max-width: 70%;
+    }
+    .buttoncta{
+        width: 70%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+    .password{
+        width: 70%;
+    }
+    .slider{
+        width: 70%;
+    }
+}
